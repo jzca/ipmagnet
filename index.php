@@ -1,7 +1,7 @@
 <?php
-	$TRACKER=urlencode("http://localhost:80/ipmagnet/"); //Remember to include the trailing slash here!
+	$TRACKER=urlencode("https://jzca.github.io/ipmagnet/"); //Remember to include the trailing slash here!
 	$db = new PDO("sqlite:ipmagnet.db3");
-	$enableInterval=false;
+	$enableInterval=true;
 	$trackerInterval=300;
 	
 	$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_SILENT);
